@@ -32,7 +32,7 @@ const ChatInput = () => {
         <div className="flex items-start gap-4">
           <Avatar className={cn(`relative mt-0.5 flex h-6 w-6 shrink-0`)}>
             <AvatarImage
-              src={"/livechat/images/anakin-avatar.jpg"}
+              src={`${import.meta.env.BASE_URL}images/anakin-avatar.jpg`}
               className="object-cover"
             />
             <AvatarFallback>{getUsernameInitials("Anakin")}</AvatarFallback>

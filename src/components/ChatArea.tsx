@@ -167,7 +167,7 @@ const ChatArea = () => {
               name="Darth Vader"
               message={`@[Luke Skywalker](luke_skywalker), I AM YOUR FATHER!`}
               time="12:48"
-              avatar="/livechat/images/vader.jpeg"
+              avatar={`${import.meta.env.BASE_URL}images/vader.jpeg`}
               isAdmin={true}
               role="admin"
             />

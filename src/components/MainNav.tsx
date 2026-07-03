@@ -12,7 +12,11 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link to="/" className="flex items-center space-x-2">
-        <img src="/dtk.svg" className="h-6 w-6" alt="logo" />
+        <img
+          src={`${import.meta.env.BASE_URL}dtk.svg`}
+          className="h-6 w-6"
+          alt="logo"
+        />
         <span className="inline-block font-bold">{siteConfig.name}</span>
       </Link>
       {items?.length ? (
